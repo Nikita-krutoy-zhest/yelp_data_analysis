@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_16f95ce30c1ea1e90cdd9d093b073e5b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_16f95ce30c1ea1e90cdd9d093b073e5b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_16f95ce30c1ea1e90cdd9d093b073e5b = L.map(
+                "map_16f95ce30c1ea1e90cdd9d093b073e5b",
+                {
+                    center: [36.2, -115.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_75408ca8491fa0928dda31fc2d0dbb6b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_75408ca8491fa0928dda31fc2d0dbb6b.addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+            var circle_marker_ffb5611b36bc705b61c3137dc6895630 = L.circleMarker(
+                [36.0864360649, -115.307593419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_5d9e1cccf240fdd58f23602f6470e17c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d2bfdb152bea9b27f50e3dc27981dea = $(`<div id="html_7d2bfdb152bea9b27f50e3dc27981dea" style="width: 100.0%; height: 100.0%;">         <b>"Red Lantern Pho Vietnamese Grill"</b><br>         Рейтинг: 4.70<br>         Отзывов: 98<br>         Категории: Chicken Wings;Vietnamese;Restaurants;Soup         </div>`)[0];
+                popup_5d9e1cccf240fdd58f23602f6470e17c.setContent(html_7d2bfdb152bea9b27f50e3dc27981dea);
+            
+        
+
+        circle_marker_ffb5611b36bc705b61c3137dc6895630.bindPopup(popup_5d9e1cccf240fdd58f23602f6470e17c)
+        ;
+
+        
+    
+    
+            var circle_marker_be7e0d42ab1b51551b091a6d461f5ea0 = L.circleMarker(
+                [36.1461525047, -115.206984915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_9d0cb63256f132333360f37aea14d6a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_576e046a034f55f33b96bfaa6ba2082b = $(`<div id="html_576e046a034f55f33b96bfaa6ba2082b" style="width: 100.0%; height: 100.0%;">         <b>"Playa Papagayos"</b><br>         Рейтинг: 4.70<br>         Отзывов: 88<br>         Категории: Bars;Mexican;Restaurants;Nightlife;Beer Bar;Seafood         </div>`)[0];
+                popup_9d0cb63256f132333360f37aea14d6a2.setContent(html_576e046a034f55f33b96bfaa6ba2082b);
+            
+        
+
+        circle_marker_be7e0d42ab1b51551b091a6d461f5ea0.bindPopup(popup_9d0cb63256f132333360f37aea14d6a2)
+        ;
+
+        
+    
+    
+            var circle_marker_977bfee409c153825de691744df36387 = L.circleMarker(
+                [36.1017365167, -115.100434612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_dffd55ffb7a4faf9114149f7f214c529 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_518f6c2ce282f5ce1a6f3e985d4c4672 = $(`<div id="html_518f6c2ce282f5ce1a6f3e985d4c4672" style="width: 100.0%; height: 100.0%;">         <b>"Sushi Hagi"</b><br>         Рейтинг: 4.71<br>         Отзывов: 85<br>         Категории: Sushi Bars;Restaurants         </div>`)[0];
+                popup_dffd55ffb7a4faf9114149f7f214c529.setContent(html_518f6c2ce282f5ce1a6f3e985d4c4672);
+            
+        
+
+        circle_marker_977bfee409c153825de691744df36387.bindPopup(popup_dffd55ffb7a4faf9114149f7f214c529)
+        ;
+
+        
+    
+    
+            var circle_marker_eda0ee3405f5ba7a903a1879cda10aff = L.circleMarker(
+                [36.1619276, -115.1346287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_87f9bbd017dad5143701999e6423e81c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_154f1381e59d881f90b58aefffa27c44 = $(`<div id="html_154f1381e59d881f90b58aefffa27c44" style="width: 100.0%; height: 100.0%;">         <b>"Bronze Cafe at The Center"</b><br>         Рейтинг: 4.71<br>         Отзывов: 619<br>         Категории: Salad;Vegan;Sandwiches;Coffee & Tea;Food;Restaurants;Vegetarian;Cafes         </div>`)[0];
+                popup_87f9bbd017dad5143701999e6423e81c.setContent(html_154f1381e59d881f90b58aefffa27c44);
+            
+        
+
+        circle_marker_eda0ee3405f5ba7a903a1879cda10aff.bindPopup(popup_87f9bbd017dad5143701999e6423e81c)
+        ;
+
+        
+    
+    
+            var circle_marker_ab0a8cb17bf30297e35848e0354f81e2 = L.circleMarker(
+                [36.233582833, -115.250890152],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_bece035a34f2e1f6810942e73ad4d37a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b457e1dc80f7b9f806b2acdc9b3e7b3 = $(`<div id="html_2b457e1dc80f7b9f806b2acdc9b3e7b3" style="width: 100.0%; height: 100.0%;">         <b>"Sin Fronteras Tacos"</b><br>         Рейтинг: 4.71<br>         Отзывов: 135<br>         Категории: Mexican;Restaurants         </div>`)[0];
+                popup_bece035a34f2e1f6810942e73ad4d37a.setContent(html_2b457e1dc80f7b9f806b2acdc9b3e7b3);
+            
+        
+
+        circle_marker_ab0a8cb17bf30297e35848e0354f81e2.bindPopup(popup_bece035a34f2e1f6810942e73ad4d37a)
+        ;
+
+        
+    
+    
+            var circle_marker_9841aad0ac956d8a35a5e4551fce933c = L.circleMarker(
+                [36.171313, -115.245475],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_074401b0905f3de40dd3250a45f5a236 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e83274429a05fc70cefa178f2ae0272e = $(`<div id="html_e83274429a05fc70cefa178f2ae0272e" style="width: 100.0%; height: 100.0%;">         <b>"Aria Mediterranean Restaurant"</b><br>         Рейтинг: 4.71<br>         Отзывов: 167<br>         Категории: Middle Eastern;Persian/Iranian;Mediterranean;Vegetarian;Restaurants         </div>`)[0];
+                popup_074401b0905f3de40dd3250a45f5a236.setContent(html_e83274429a05fc70cefa178f2ae0272e);
+            
+        
+
+        circle_marker_9841aad0ac956d8a35a5e4551fce933c.bindPopup(popup_074401b0905f3de40dd3250a45f5a236)
+        ;
+
+        
+    
+    
+            var circle_marker_196fbc64d48cd49abe38a2b05ece091d = L.circleMarker(
+                [36.11288029999999, -115.27862240000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_0d2c0c26fe3b9485b495703484105787 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_203c0c27858f3e5d50489ee801937cf9 = $(`<div id="html_203c0c27858f3e5d50489ee801937cf9" style="width: 100.0%; height: 100.0%;">         <b>"Elia"</b><br>         Рейтинг: 4.71<br>         Отзывов: 63<br>         Категории: Mediterranean;Restaurants;Greek         </div>`)[0];
+                popup_0d2c0c26fe3b9485b495703484105787.setContent(html_203c0c27858f3e5d50489ee801937cf9);
+            
+        
+
+        circle_marker_196fbc64d48cd49abe38a2b05ece091d.bindPopup(popup_0d2c0c26fe3b9485b495703484105787)
+        ;
+
+        
+    
+    
+            var circle_marker_25276c7d19d6e71b8b6d42cec52001b6 = L.circleMarker(
+                [36.127224, -115.1715513],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_b08a740e78d8c34592ea14bd5b60651f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b04c48e950414248ee45c0db7b41d52 = $(`<div id="html_9b04c48e950414248ee45c0db7b41d52" style="width: 100.0%; height: 100.0%;">         <b>"Gogo Poke LV"</b><br>         Рейтинг: 4.72<br>         Отзывов: 67<br>         Категории: Food;Hawaiian;Japanese;Restaurants;Poke         </div>`)[0];
+                popup_b08a740e78d8c34592ea14bd5b60651f.setContent(html_9b04c48e950414248ee45c0db7b41d52);
+            
+        
+
+        circle_marker_25276c7d19d6e71b8b6d42cec52001b6.bindPopup(popup_b08a740e78d8c34592ea14bd5b60651f)
+        ;
+
+        
+    
+    
+            var circle_marker_68b3a89e8d9892391bedb209600ea52c = L.circleMarker(
+                [36.1433307078, -115.262028687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_aeacc74c52104fc8ce41f98a12495cdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_374a2c1d36f6b21aa6bbcd4dafb213b4 = $(`<div id="html_374a2c1d36f6b21aa6bbcd4dafb213b4" style="width: 100.0%; height: 100.0%;">         <b>"Eatt Gourmet Bistro"</b><br>         Рейтинг: 4.72<br>         Отзывов: 217<br>         Категории: French;Vegan;Bakeries;Salad;Fast Food;American (New);Event Planning & Services;Soup;Personal Chefs;Food Delivery Services;Gluten-Free;Caterers;Food;Sandwiches;Vegetarian;Breakfast & Brunch;Restaurants;Mediterranean         </div>`)[0];
+                popup_aeacc74c52104fc8ce41f98a12495cdb.setContent(html_374a2c1d36f6b21aa6bbcd4dafb213b4);
+            
+        
+
+        circle_marker_68b3a89e8d9892391bedb209600ea52c.bindPopup(popup_aeacc74c52104fc8ce41f98a12495cdb)
+        ;
+
+        
+    
+    
+            var circle_marker_068d3d8321fe21caa290c6287539b387 = L.circleMarker(
+                [36.0707521, -115.2919191],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_467ac88b3b9c2c22d1fd7ef18d9b1f4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21df42af72a4d3cfba4e9305cc35a2f9 = $(`<div id="html_21df42af72a4d3cfba4e9305cc35a2f9" style="width: 100.0%; height: 100.0%;">         <b>"Le Petit Café & Bakery"</b><br>         Рейтинг: 4.73<br>         Отзывов: 142<br>         Категории: Bakeries;Restaurants;French;Food;Cafes;Themed Cafes         </div>`)[0];
+                popup_467ac88b3b9c2c22d1fd7ef18d9b1f4e.setContent(html_21df42af72a4d3cfba4e9305cc35a2f9);
+            
+        
+
+        circle_marker_068d3d8321fe21caa290c6287539b387.bindPopup(popup_467ac88b3b9c2c22d1fd7ef18d9b1f4e)
+        ;
+
+        
+    
+    
+            var circle_marker_36f636247c3e6d415974fb73b51339be = L.circleMarker(
+                [36.075943, -115.2980198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_632145d3329779dab2a8196a6265a545 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87fa018faf5246b62f9356bf8a57e76a = $(`<div id="html_87fa018faf5246b62f9356bf8a57e76a" style="width: 100.0%; height: 100.0%;">         <b>"Pressed For Juice"</b><br>         Рейтинг: 4.73<br>         Отзывов: 161<br>         Категории: Juice Bars & Smoothies;Food;Organic Stores;Restaurants;Coffee & Tea;Gluten-Free         </div>`)[0];
+                popup_632145d3329779dab2a8196a6265a545.setContent(html_87fa018faf5246b62f9356bf8a57e76a);
+            
+        
+
+        circle_marker_36f636247c3e6d415974fb73b51339be.bindPopup(popup_632145d3329779dab2a8196a6265a545)
+        ;
+
+        
+    
+    
+            var circle_marker_6e133e92837c1ebea72c282f36a63d78 = L.circleMarker(
+                [36.0424465491, -115.224243901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_f6ddac478c92051a988b56ddd353cc2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4485f3de57adae80f4ca8e3f9a49328 = $(`<div id="html_f4485f3de57adae80f4ca8e3f9a49328" style="width: 100.0%; height: 100.0%;">         <b>"MVR Auto Services"</b><br>         Рейтинг: 4.73<br>         Отзывов: 74<br>         Категории: Automotive;Oil Change Stations;Pizza;Auto Insurance;Auto Parts & Supplies;Financial Services;Windshield Installation & Repair;Auto Glass Services;Insurance;Towing;Transmission Repair;Restaurants;Auto Repair         </div>`)[0];
+                popup_f6ddac478c92051a988b56ddd353cc2c.setContent(html_f4485f3de57adae80f4ca8e3f9a49328);
+            
+        
+
+        circle_marker_6e133e92837c1ebea72c282f36a63d78.bindPopup(popup_f6ddac478c92051a988b56ddd353cc2c)
+        ;
+
+        
+    
+    
+            var circle_marker_fc516b7fa78bda17474459c87a6a568b = L.circleMarker(
+                [36.1440225, -115.195896],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_bb53415200946fa51a37eafc4963be65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8717b440f115887fba6d43c16503f4be = $(`<div id="html_8717b440f115887fba6d43c16503f4be" style="width: 100.0%; height: 100.0%;">         <b>"Chuchote Thai Bistro & Desserts"</b><br>         Рейтинг: 4.73<br>         Отзывов: 60<br>         Категории: Restaurants;Food;Desserts;Thai         </div>`)[0];
+                popup_bb53415200946fa51a37eafc4963be65.setContent(html_8717b440f115887fba6d43c16503f4be);
+            
+        
+
+        circle_marker_fc516b7fa78bda17474459c87a6a568b.bindPopup(popup_bb53415200946fa51a37eafc4963be65)
+        ;
+
+        
+    
+    
+            var circle_marker_3ecd1271b4b69725420a458357df2cf6 = L.circleMarker(
+                [36.0415682, -115.1215253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_81de5276228899de7192fcf3dc331a64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_875035f08f0cf8ee9169bb6a1339bea0 = $(`<div id="html_875035f08f0cf8ee9169bb6a1339bea0" style="width: 100.0%; height: 100.0%;">         <b>"Foodie Fit"</b><br>         Рейтинг: 4.74<br>         Отзывов: 73<br>         Категории: Specialty Food;Food Delivery Services;Health Markets;Event Planning & Services;Food;American (Traditional);Do-It-Yourself Food;Restaurants;Personal Chefs         </div>`)[0];
+                popup_81de5276228899de7192fcf3dc331a64.setContent(html_875035f08f0cf8ee9169bb6a1339bea0);
+            
+        
+
+        circle_marker_3ecd1271b4b69725420a458357df2cf6.bindPopup(popup_81de5276228899de7192fcf3dc331a64)
+        ;
+
+        
+    
+    
+            var circle_marker_d4d82318eba2a93d28fd183954953017 = L.circleMarker(
+                [36.101689985, -115.29815026],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_67565d6a66a0092e4497b8ae228c6567 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_173cbf191e3e2e6984069841f2259f29 = $(`<div id="html_173cbf191e3e2e6984069841f2259f29" style="width: 100.0%; height: 100.0%;">         <b>"Tasty Crepes"</b><br>         Рейтинг: 4.74<br>         Отзывов: 234<br>         Категории: Juice Bars & Smoothies;Food;Creperies;Restaurants;Ice Cream & Frozen Yogurt;Desserts         </div>`)[0];
+                popup_67565d6a66a0092e4497b8ae228c6567.setContent(html_173cbf191e3e2e6984069841f2259f29);
+            
+        
+
+        circle_marker_d4d82318eba2a93d28fd183954953017.bindPopup(popup_67565d6a66a0092e4497b8ae228c6567)
+        ;
+
+        
+    
+    
+            var circle_marker_f2b8ba8e53ecd6df0d5a343f2ef0fa7d = L.circleMarker(
+                [36.1013621, -115.12032820000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_6402cfeebfd6fe9f6c202fea6f8596c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8220e852e28359fc7bbc88d814b551b8 = $(`<div id="html_8220e852e28359fc7bbc88d814b551b8" style="width: 100.0%; height: 100.0%;">         <b>"Las Enchiladas Demama"</b><br>         Рейтинг: 4.75<br>         Отзывов: 67<br>         Категории: Mexican;Restaurants         </div>`)[0];
+                popup_6402cfeebfd6fe9f6c202fea6f8596c2.setContent(html_8220e852e28359fc7bbc88d814b551b8);
+            
+        
+
+        circle_marker_f2b8ba8e53ecd6df0d5a343f2ef0fa7d.bindPopup(popup_6402cfeebfd6fe9f6c202fea6f8596c2)
+        ;
+
+        
+    
+    
+            var circle_marker_5ae6c9e896625c95cf48f97313ba65b3 = L.circleMarker(
+                [36.1272273, -115.2799398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_2cf1d55d332037ace4ee61193ea8630a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0022fd514ca35af77e63c82b27266f3 = $(`<div id="html_c0022fd514ca35af77e63c82b27266f3" style="width: 100.0%; height: 100.0%;">         <b>"La Maison de Maggie"</b><br>         Рейтинг: 4.75<br>         Отзывов: 292<br>         Категории: Creperies;French;Gluten-Free;Restaurants;Cafes         </div>`)[0];
+                popup_2cf1d55d332037ace4ee61193ea8630a.setContent(html_c0022fd514ca35af77e63c82b27266f3);
+            
+        
+
+        circle_marker_5ae6c9e896625c95cf48f97313ba65b3.bindPopup(popup_2cf1d55d332037ace4ee61193ea8630a)
+        ;
+
+        
+    
+    
+            var circle_marker_596a411fada0a0f73dad7fbb0acf8dee = L.circleMarker(
+                [36.1599423, -115.2222337],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_5c2b959a9f44669e11f176684fed4e28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c87ab4d59fbb806bf3b96e604d33bb21 = $(`<div id="html_c87ab4d59fbb806bf3b96e604d33bb21" style="width: 100.0%; height: 100.0%;">         <b>"Sushi Hiroyoshi Japanese Cuisine"</b><br>         Рейтинг: 4.75<br>         Отзывов: 177<br>         Категории: Seafood;Sushi Bars;Restaurants;Japanese         </div>`)[0];
+                popup_5c2b959a9f44669e11f176684fed4e28.setContent(html_c87ab4d59fbb806bf3b96e604d33bb21);
+            
+        
+
+        circle_marker_596a411fada0a0f73dad7fbb0acf8dee.bindPopup(popup_5c2b959a9f44669e11f176684fed4e28)
+        ;
+
+        
+    
+    
+            var circle_marker_0f710ba634afe686a4fb7ee2a29cfd9f = L.circleMarker(
+                [36.1697096, -115.1236952],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_c4370f091d81dd702e0fa9048c54d36e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abb502d6d6f1de23600809c397cd15f5 = $(`<div id="html_abb502d6d6f1de23600809c397cd15f5" style="width: 100.0%; height: 100.0%;">         <b>"Snow Ono Shave Ice"</b><br>         Рейтинг: 4.75<br>         Отзывов: 138<br>         Категории: Food;Desserts;Shaved Ice;Hawaiian;Food Stands;Restaurants         </div>`)[0];
+                popup_c4370f091d81dd702e0fa9048c54d36e.setContent(html_abb502d6d6f1de23600809c397cd15f5);
+            
+        
+
+        circle_marker_0f710ba634afe686a4fb7ee2a29cfd9f.bindPopup(popup_c4370f091d81dd702e0fa9048c54d36e)
+        ;
+
+        
+    
+    
+            var circle_marker_93c0fec483d90d46bf1f62a25d82c548 = L.circleMarker(
+                [36.1423498621, -115.268324353],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_4ed8bc602c70b48866a12b5ee8e1745a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37116077d3d9af5e3fbdad6f59b56a84 = $(`<div id="html_37116077d3d9af5e3fbdad6f59b56a84" style="width: 100.0%; height: 100.0%;">         <b>"Salud Mexican Bistro and Tequileria"</b><br>         Рейтинг: 4.76<br>         Отзывов: 70<br>         Категории: Nightlife;Mexican;Bars;Restaurants         </div>`)[0];
+                popup_4ed8bc602c70b48866a12b5ee8e1745a.setContent(html_37116077d3d9af5e3fbdad6f59b56a84);
+            
+        
+
+        circle_marker_93c0fec483d90d46bf1f62a25d82c548.bindPopup(popup_4ed8bc602c70b48866a12b5ee8e1745a)
+        ;
+
+        
+    
+    
+            var circle_marker_d854c6a89618e1ed2ae47e26e5cf397a = L.circleMarker(
+                [36.1263711, -115.1917692],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_bc36de1819f47efef3fed67c73e80c75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_901b7ff3cc3c3a718b233817855ed2b7 = $(`<div id="html_901b7ff3cc3c3a718b233817855ed2b7" style="width: 100.0%; height: 100.0%;">         <b>"J Karaoke Bar"</b><br>         Рейтинг: 4.76<br>         Отзывов: 240<br>         Категории: Bars;American (New);Karaoke;Nightlife;Asian Fusion;Cocktail Bars;Restaurants         </div>`)[0];
+                popup_bc36de1819f47efef3fed67c73e80c75.setContent(html_901b7ff3cc3c3a718b233817855ed2b7);
+            
+        
+
+        circle_marker_d854c6a89618e1ed2ae47e26e5cf397a.bindPopup(popup_bc36de1819f47efef3fed67c73e80c75)
+        ;
+
+        
+    
+    
+            var circle_marker_380ccac8c10a8a5ab335c99a64e9b0b5 = L.circleMarker(
+                [36.11457539999999, -115.2266512],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_7772c2a5c6fd8850fd51721ffd880252 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af8ce392c7c870c0b980c17c22edaf53 = $(`<div id="html_af8ce392c7c870c0b980c17c22edaf53" style="width: 100.0%; height: 100.0%;">         <b>"Fresh Sub"</b><br>         Рейтинг: 4.76<br>         Отзывов: 55<br>         Категории: Sandwiches;Juice Bars & Smoothies;Desserts;Food;Restaurants;Ice Cream & Frozen Yogurt         </div>`)[0];
+                popup_7772c2a5c6fd8850fd51721ffd880252.setContent(html_af8ce392c7c870c0b980c17c22edaf53);
+            
+        
+
+        circle_marker_380ccac8c10a8a5ab335c99a64e9b0b5.bindPopup(popup_7772c2a5c6fd8850fd51721ffd880252)
+        ;
+
+        
+    
+    
+            var circle_marker_3ca79cc7a83c02e8b81cb97f54b7a54a = L.circleMarker(
+                [36.1591487, -115.152673],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_8042d05212904b3ca79944163dd64422 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_446bd0ca0b21de24ccb2c0a12a382568 = $(`<div id="html_446bd0ca0b21de24ccb2c0a12a382568" style="width: 100.0%; height: 100.0%;">         <b>"Tacos Huevos"</b><br>         Рейтинг: 4.77<br>         Отзывов: 133<br>         Категории: Breakfast & Brunch;Mexican;Restaurants;Desserts;Tacos;Soup;Food         </div>`)[0];
+                popup_8042d05212904b3ca79944163dd64422.setContent(html_446bd0ca0b21de24ccb2c0a12a382568);
+            
+        
+
+        circle_marker_3ca79cc7a83c02e8b81cb97f54b7a54a.bindPopup(popup_8042d05212904b3ca79944163dd64422)
+        ;
+
+        
+    
+    
+            var circle_marker_356f2b45c1ed8876e6d5664f800cbac3 = L.circleMarker(
+                [36.1064328, -115.2980195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_9f29d8cd3a7c9408c9b38b74fb1ba6cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36b86d7e5be1e7c4f8640ade22fa539c = $(`<div id="html_36b86d7e5be1e7c4f8640ade22fa539c" style="width: 100.0%; height: 100.0%;">         <b>"Niko's Pizza Las Vegas"</b><br>         Рейтинг: 4.78<br>         Отзывов: 118<br>         Категории: Mediterranean;Pizza;Italian;Food Delivery Services;Desserts;Chicken Wings;Sandwiches;Restaurants;Food;Salad         </div>`)[0];
+                popup_9f29d8cd3a7c9408c9b38b74fb1ba6cb.setContent(html_36b86d7e5be1e7c4f8640ade22fa539c);
+            
+        
+
+        circle_marker_356f2b45c1ed8876e6d5664f800cbac3.bindPopup(popup_9f29d8cd3a7c9408c9b38b74fb1ba6cb)
+        ;
+
+        
+    
+    
+            var circle_marker_8615afe4bee32d039005874e66b86fcd = L.circleMarker(
+                [36.078686, -115.241801],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_63eb24c0338511c2b43bb32b7b1069f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bcff3f23b6c703628b12d64c0a1ac3d = $(`<div id="html_3bcff3f23b6c703628b12d64c0a1ac3d" style="width: 100.0%; height: 100.0%;">         <b>"Pie Me Over"</b><br>         Рейтинг: 4.78<br>         Отзывов: 105<br>         Категории: Do-It-Yourself Food;Restaurants;Food;Desserts;American (Traditional);Bakeries         </div>`)[0];
+                popup_63eb24c0338511c2b43bb32b7b1069f0.setContent(html_3bcff3f23b6c703628b12d64c0a1ac3d);
+            
+        
+
+        circle_marker_8615afe4bee32d039005874e66b86fcd.bindPopup(popup_63eb24c0338511c2b43bb32b7b1069f0)
+        ;
+
+        
+    
+    
+            var circle_marker_4ef02e3414b8ef75e39625d029d1284e = L.circleMarker(
+                [36.151555, -115.15261],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_f514127766d36df8c9b7b56d3aad86c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16ec92d1ad8fb0ccee07e37551052919 = $(`<div id="html_16ec92d1ad8fb0ccee07e37551052919" style="width: 100.0%; height: 100.0%;">         <b>"Art of Flavors"</b><br>         Рейтинг: 4.78<br>         Отзывов: 353<br>         Категории: Food;Gelato;Restaurants;Ice Cream & Frozen Yogurt;American (New);Desserts         </div>`)[0];
+                popup_f514127766d36df8c9b7b56d3aad86c6.setContent(html_16ec92d1ad8fb0ccee07e37551052919);
+            
+        
+
+        circle_marker_4ef02e3414b8ef75e39625d029d1284e.bindPopup(popup_f514127766d36df8c9b7b56d3aad86c6)
+        ;
+
+        
+    
+    
+            var circle_marker_3e64111dc1ff31f0a12101ded829d057 = L.circleMarker(
+                [36.1947692, -115.2524715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_c451c5d1c4075d0080174a686dd5fb01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4af56fef7413af0f61167b48cdf8599c = $(`<div id="html_4af56fef7413af0f61167b48cdf8599c" style="width: 100.0%; height: 100.0%;">         <b>"Kame Omakase"</b><br>         Рейтинг: 4.79<br>         Отзывов: 89<br>         Категории: Japanese;Seafood;Sushi Bars;Restaurants         </div>`)[0];
+                popup_c451c5d1c4075d0080174a686dd5fb01.setContent(html_4af56fef7413af0f61167b48cdf8599c);
+            
+        
+
+        circle_marker_3e64111dc1ff31f0a12101ded829d057.bindPopup(popup_c451c5d1c4075d0080174a686dd5fb01)
+        ;
+
+        
+    
+    
+            var circle_marker_a9b0e709ca7478cd6cd2054a6255eb6a = L.circleMarker(
+                [36.0985778, -115.24244009999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_90bd6c479c3847382810f5b034680e41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a802a63aeda2571d9bb6054e25bbaeb8 = $(`<div id="html_a802a63aeda2571d9bb6054e25bbaeb8" style="width: 100.0%; height: 100.0%;">         <b>"Meraki Greek Grill"</b><br>         Рейтинг: 4.80<br>         Отзывов: 326<br>         Категории: Restaurants;Greek         </div>`)[0];
+                popup_90bd6c479c3847382810f5b034680e41.setContent(html_a802a63aeda2571d9bb6054e25bbaeb8);
+            
+        
+
+        circle_marker_a9b0e709ca7478cd6cd2054a6255eb6a.bindPopup(popup_90bd6c479c3847382810f5b034680e41)
+        ;
+
+        
+    
+    
+            var circle_marker_68c3626639115099f704d5e07c8974d9 = L.circleMarker(
+                [36.1256356, -115.2024865],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_21cc9484830524d705b382610810650b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e3e1a6da4438b67556d5fb9886088b4 = $(`<div id="html_2e3e1a6da4438b67556d5fb9886088b4" style="width: 100.0%; height: 100.0%;">         <b>"California Sushi Burrito"</b><br>         Рейтинг: 4.81<br>         Отзывов: 57<br>         Категории: Asian Fusion;Fast Food;Restaurants;Japanese;Poke;Sushi Bars;Food         </div>`)[0];
+                popup_21cc9484830524d705b382610810650b.setContent(html_2e3e1a6da4438b67556d5fb9886088b4);
+            
+        
+
+        circle_marker_68c3626639115099f704d5e07c8974d9.bindPopup(popup_21cc9484830524d705b382610810650b)
+        ;
+
+        
+    
+    
+            var circle_marker_0186992270730380f66b67447e8e12de = L.circleMarker(
+                [36.167893793000005, -115.140238461],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_8530f1347bf8be6f4c12d8b26c7187bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5138276f7f9faf551f57be620937f725 = $(`<div id="html_5138276f7f9faf551f57be620937f725" style="width: 100.0%; height: 100.0%;">         <b>"Smooth Eats"</b><br>         Рейтинг: 4.81<br>         Отзывов: 57<br>         Категории: Juice Bars & Smoothies;Restaurants;Sandwiches;Comfort Food;Specialty Food;Health Markets;Vegetarian;Food         </div>`)[0];
+                popup_8530f1347bf8be6f4c12d8b26c7187bb.setContent(html_5138276f7f9faf551f57be620937f725);
+            
+        
+
+        circle_marker_0186992270730380f66b67447e8e12de.bindPopup(popup_8530f1347bf8be6f4c12d8b26c7187bb)
+        ;
+
+        
+    
+    
+            var circle_marker_ce1cb5cae76938d2f1e3d5dfb32382ab = L.circleMarker(
+                [36.1597422739, -115.23273812],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_db9ed97d2e4cc59c4613a14898f8e86a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f539758e19f53b64334abc257a0c267 = $(`<div id="html_4f539758e19f53b64334abc257a0c267" style="width: 100.0%; height: 100.0%;">         <b>"Blaqcat Ultra Hookah Lounge"</b><br>         Рейтинг: 4.81<br>         Отзывов: 63<br>         Категории: Adult Entertainment;Lounges;Hookah Bars;Restaurants;Coffee & Tea;Bars;Nightlife;Mediterranean;Food         </div>`)[0];
+                popup_db9ed97d2e4cc59c4613a14898f8e86a.setContent(html_4f539758e19f53b64334abc257a0c267);
+            
+        
+
+        circle_marker_ce1cb5cae76938d2f1e3d5dfb32382ab.bindPopup(popup_db9ed97d2e4cc59c4613a14898f8e86a)
+        ;
+
+        
+    
+    
+            var circle_marker_d71c9f3866b83fd0b742a56047bfeb0e = L.circleMarker(
+                [36.0985273, -115.1484459],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_9d585b6e086f2059b13507e3294fba0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec4dc15ef2738a328b8a4d50d9ba03c8 = $(`<div id="html_ec4dc15ef2738a328b8a4d50d9ba03c8" style="width: 100.0%; height: 100.0%;">         <b>"El Frescos Cocina Mexicana"</b><br>         Рейтинг: 4.82<br>         Отзывов: 191<br>         Категории: Caterers;Mexican;Restaurants;Food;Event Planning & Services         </div>`)[0];
+                popup_9d585b6e086f2059b13507e3294fba0b.setContent(html_ec4dc15ef2738a328b8a4d50d9ba03c8);
+            
+        
+
+        circle_marker_d71c9f3866b83fd0b742a56047bfeb0e.bindPopup(popup_9d585b6e086f2059b13507e3294fba0b)
+        ;
+
+        
+    
+    
+            var circle_marker_255b7cf971c8027caff6658e73c8900b = L.circleMarker(
+                [36.1017406138, -115.100359042],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_340465ebf156452f6984d0922231dee2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e076fe1a1ba6d7b3bdcdedc24b327d91 = $(`<div id="html_e076fe1a1ba6d7b3bdcdedc24b327d91" style="width: 100.0%; height: 100.0%;">         <b>"Zenaida's Cafe"</b><br>         Рейтинг: 4.83<br>         Отзывов: 180<br>         Категории: Restaurants;Breakfast & Brunch;Cafes         </div>`)[0];
+                popup_340465ebf156452f6984d0922231dee2.setContent(html_e076fe1a1ba6d7b3bdcdedc24b327d91);
+            
+        
+
+        circle_marker_255b7cf971c8027caff6658e73c8900b.bindPopup(popup_340465ebf156452f6984d0922231dee2)
+        ;
+
+        
+    
+    
+            var circle_marker_40f94baf130ef0166b21e1f015ab24c4 = L.circleMarker(
+                [36.1165487, -115.0881146],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_10bb5e06dc246fa375e6142fde861cb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_163f7c3125c30ca01ded58f070223daa = $(`<div id="html_163f7c3125c30ca01ded58f070223daa" style="width: 100.0%; height: 100.0%;">         <b>"Poppa Naps BBQ"</b><br>         Рейтинг: 4.84<br>         Отзывов: 104<br>         Категории: Food Stands;Hot Dogs;Caterers;Restaurants;American (New);Event Planning & Services;Barbeque         </div>`)[0];
+                popup_10bb5e06dc246fa375e6142fde861cb6.setContent(html_163f7c3125c30ca01ded58f070223daa);
+            
+        
+
+        circle_marker_40f94baf130ef0166b21e1f015ab24c4.bindPopup(popup_10bb5e06dc246fa375e6142fde861cb6)
+        ;
+
+        
+    
+    
+            var circle_marker_88bdfe66a15fe96d5b9a31e6eb405033 = L.circleMarker(
+                [36.0541948, -115.2424431],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_1566793448f180b4ecd405a0f6863c70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96efd14a3b800cbf44cd4f45206181a8 = $(`<div id="html_96efd14a3b800cbf44cd4f45206181a8" style="width: 100.0%; height: 100.0%;">         <b>"Brew Tea Bar"</b><br>         Рейтинг: 4.85<br>         Отзывов: 1165<br>         Категории: Cafes;Tea Rooms;Food;Bubble Tea;Restaurants;Desserts         </div>`)[0];
+                popup_1566793448f180b4ecd405a0f6863c70.setContent(html_96efd14a3b800cbf44cd4f45206181a8);
+            
+        
+
+        circle_marker_88bdfe66a15fe96d5b9a31e6eb405033.bindPopup(popup_1566793448f180b4ecd405a0f6863c70)
+        ;
+
+        
+    
+    
+            var circle_marker_aabb4fa8f497f0d6d5721c9176163e17 = L.circleMarker(
+                [36.1667834, -115.28619679999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_10a487a8e3cdfc76a68399e48ebc91e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a67aad94b6ad7ed57a5f50c1c6f0075c = $(`<div id="html_a67aad94b6ad7ed57a5f50c1c6f0075c" style="width: 100.0%; height: 100.0%;">         <b>"Garden Grill"</b><br>         Рейтинг: 4.87<br>         Отзывов: 91<br>         Категории: Tacos;Street Vendors;Farmers Market;Vegetarian;Mexican;Vegan;Restaurants;Food         </div>`)[0];
+                popup_10a487a8e3cdfc76a68399e48ebc91e0.setContent(html_a67aad94b6ad7ed57a5f50c1c6f0075c);
+            
+        
+
+        circle_marker_aabb4fa8f497f0d6d5721c9176163e17.bindPopup(popup_10a487a8e3cdfc76a68399e48ebc91e0)
+        ;
+
+        
+    
+    
+            var circle_marker_362f2f3e19240a1819221e04aa045eae = L.circleMarker(
+                [36.1259599, -115.1848457],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_a511308fccd4b682c74fa8d36bcdb3d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82cb446c8b6a882e3e8f59a5f06ffecf = $(`<div id="html_82cb446c8b6a882e3e8f59a5f06ffecf" style="width: 100.0%; height: 100.0%;">         <b>"Bosa Boba Cafe"</b><br>         Рейтинг: 4.89<br>         Отзывов: 55<br>         Категории: Vietnamese;Bubble Tea;Sandwiches;Food;Coffee & Tea;Restaurants         </div>`)[0];
+                popup_a511308fccd4b682c74fa8d36bcdb3d8.setContent(html_82cb446c8b6a882e3e8f59a5f06ffecf);
+            
+        
+
+        circle_marker_362f2f3e19240a1819221e04aa045eae.bindPopup(popup_a511308fccd4b682c74fa8d36bcdb3d8)
+        ;
+
+        
+    
+    
+            var circle_marker_98a38a85841a331069057d0db8ce5fa4 = L.circleMarker(
+                [36.1524769658, -115.151944854],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_426b92012584f05cd0733b2fa303e459 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02d13bda20d2ef4d18618ad6bc675e8f = $(`<div id="html_02d13bda20d2ef4d18618ad6bc675e8f" style="width: 100.0%; height: 100.0%;">         <b>"Pepito Shack"</b><br>         Рейтинг: 4.91<br>         Отзывов: 65<br>         Категории: Restaurants;Burgers;Food Stands;Sandwiches;Hot Dogs         </div>`)[0];
+                popup_426b92012584f05cd0733b2fa303e459.setContent(html_02d13bda20d2ef4d18618ad6bc675e8f);
+            
+        
+
+        circle_marker_98a38a85841a331069057d0db8ce5fa4.bindPopup(popup_426b92012584f05cd0733b2fa303e459)
+        ;
+
+        
+    
+    
+            var circle_marker_92a77508737a24c54ad4b4a1f3336fab = L.circleMarker(
+                [36.1145367627, -115.172678268],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_16f95ce30c1ea1e90cdd9d093b073e5b);
+        
+    
+        var popup_bdbd4b65fa3aaddbe3fb41b4955bbd26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84f5d7ee37afccfe166fb140ff8f76f4 = $(`<div id="html_84f5d7ee37afccfe166fb140ff8f76f4" style="width: 100.0%; height: 100.0%;">         <b>"Lip Smacking Foodie Tours"</b><br>         Рейтинг: 4.97<br>         Отзывов: 179<br>         Категории: Food Tours;Restaurants;Event Planning & Services;Food;Hotels;Hotels & Travel;Tours;Walking Tours         </div>`)[0];
+                popup_bdbd4b65fa3aaddbe3fb41b4955bbd26.setContent(html_84f5d7ee37afccfe166fb140ff8f76f4);
+            
+        
+
+        circle_marker_92a77508737a24c54ad4b4a1f3336fab.bindPopup(popup_bdbd4b65fa3aaddbe3fb41b4955bbd26)
+        ;
+
+        
+    
+</script>
+</html>
